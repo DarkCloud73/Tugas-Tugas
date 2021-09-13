@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form tag</title>
+    <style>
+body{
+    background-color:#808080;
+}
+    </style>
+</head>
+<body>
+    <form action="login.php" method="POST">
+        <fieldset>
+        <legend>Formulir calon pegawai</legend>
+        <p>
+            <label>Nama      :</label>
+            <input type="text" name="Nama" />
+        </p>
+        <p>
+            <label>Alamat     :</label>
+            <input type="number" name="Alamat"/>
+        </p>
+        <p>
+            <label>Password :</label>
+            <input type="text" name="password"/>
+        </p>
+        <p>
+            <label>Jenis kelamin:</label>
+            <label><input type="radio" name="jenis_kelamin" value="laki-laki" /> Laki-laki</label>
+            <label><input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan</label>
+        </p>
+        <label> Bahasa pemograman yang dikuasai : </label>
+		<input type="checkbox" name="Bahasa pemograman">Web
+		<input type="checkbox" name="Bahasa pemograman">MOBILE
+		<input type="checkbox" name="Bahasa pemograman">DESKTOP
+        <br><br>
+        <section class="Kota Asal">
+            <label for="Kota">Kota Asal :</label>
+        <select id="Kota" name="Kota">
+            <option value="Jakarta">Jakarta</option>
+            <option value="Surabaya">Surabaya</option>
+            <option value="Bandung">Bandung</option>
+          </select>
+          </section>
+        <p>
+            Apa yang Membuat Kami harus memilih Anda?:
+        </p>
+        <textarea rows="4" cols="50" placeholder="Tulis jawaban Anda di sini"></textarea>
+        <p>
+            <input type="submit" name="submit" value="proses" />
+        </p>
+        </fieldset>
+    
+</body>
+</html>
